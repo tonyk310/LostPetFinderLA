@@ -1,0 +1,37 @@
+<% include ../partials/header.ejs %>
+
+<h1  class="text-center">Edit Comment for <%= lostPet.name %></h1>
+
+<div class="form-width">
+
+	<form action="/lostpets/<%= lostPet._id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
+		
+		<!-- <label for="editComment">Edit Comment</label> -->
+		<div class="form-group">
+			<textarea class="form-control" name="comment[text]" id="" cols="30" rows="10"><%= comment.text %></textarea>
+			<!-- <input class="form-control" id="editComment" type="text" name="comment[text]" value="<%= comment.text %>"> -->
+		</div>
+		
+
+		<button type="submit" class="btn btn-primary btn-block">Submit</button>
+	</form>	
+
+
+
+
+	<a href="/lostpets/<%= lostPet._id %>">Go Back</a>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<% include ../partials/footer.ejs %>

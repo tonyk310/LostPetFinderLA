@@ -1,0 +1,22 @@
+<% include ../partials/header.ejs %>
+
+
+<h1 class="text-center">Create Comment for <%= lostPet.name %></h1>
+
+<div class="form-width">
+	<form action="/lostpets/<%= lostPet._id %>/comments" method="POST">
+
+		<div class="form-group">
+			
+			<textarea name="comment[text]" id="" cols="30" rows="10" class="form-control" placeholder="Your comment here"></textarea>
+			<!-- <input type="text" name="comment[text]" placeholder="Your comment here" class="form-control"> -->
+		</div>
+		
+		<button type="submit" class="btn btn-primary btn-block">Submit</button>
+	</form>
+
+	<a href="/lostPets/<%= lostPet._id %>">Go back to <%= lostPet.name %>'s page</a>
+</div>
+
+
+<% include ../partials/footer.ejs %>

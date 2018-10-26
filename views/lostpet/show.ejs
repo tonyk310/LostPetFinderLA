@@ -1,0 +1,78 @@
+<% include ../partials/header.ejs %>
+
+<div class="container">
+	<div class="row">
+
+		<div class="col-md-3">
+
+		</div>
+
+		<div class="col-md-9">
+
+			<div class="card">
+				<div class="card-image-top">
+					
+					<img class="img-fluid"  src="<%= lostPet.image %>">
+				</div>
+				
+				<div class="card-body">
+					<h4>Name: <%= lostPet.name %></h4>
+					<p>Description: <%= lostPet.desc %></p>
+					<p>Date submitted to LostPetFinderLA: <%= lostPet.date.toDateString() %></p>
+					<p><em>Submitted By: <%= lostPet.author.username %></em></p>
+					
+					<% if(currentUser && currentUser.equals(lostPet.author.id)){ %>
+						<a href="/lostpets/<%= lostPet._id %>/edit" class="btn btn-warning">Edit <%= lostPet.name %></a>
+					<% } %>					
+				</div>
+			</div>
+
+			<div class="card bg-light">
+				<div class="container">
+					<h5>COMMENTS</h5>
+
+					<div>
+						<a href="/lostpets/<%= lostPet._id %>/comments/new" class="btn btn-success float-right">Create Comment</a>
+					</div>
+
+				    <div class="card-body">
+
+						<% lostPet.comments.forEach(function(element){ %>
+
+							<div>
+								
+								<em><%= element.date.toDateString() %></em>
+							</div>
+							
+							<div>
+								<strong><%= element.author.username %></strong> - <%= element.text %>
+							</div>
+							<div>	
+							
+								<% if(currentUser && currentUser.equals(element.author.id)){ %>
+									<a href="/lostpets/<%= lostPet._id %>/comments/<%= element._id %>/edit" class="btn btn-warning btn-sm">Edit</a>
+
+									<form action="/lostpets/<%= lostPet._id %>/comments/<%= element._id %>?_method=DELETE" method="POST" class="delete-form">
+										<button class="btn btn-danger btn-sm">Delete</button>
+									</form>
+
+								<% } %>
+							</div>
+					        
+					        <hr>
+
+						<% });%>
+				    </div>
+				</div>				    
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<% include ../partials/footer.ejs %>

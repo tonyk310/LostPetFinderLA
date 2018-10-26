@@ -1,0 +1,53 @@
+<% include ./partials/header.ejs %>
+
+
+
+
+
+
+<div class="container">
+
+	<h1 class="text-center">Lost Pupperonis</h1>
+
+	<div class="row">
+		<div class="col-12">
+			<h2>Recent LostPetFinderLA Alerts</h2>
+			<a href="/new" class="btn btn-primary btn-lg">Add Lost Pet</a>
+			<a href="/lostPets" class="btn btn-primary btn-lg">See All Lost Pets</a>
+		</div>
+
+		<%lostPet.forEach(function(element){ %>
+
+			<div class="col-md-4">
+				
+				<div class="card">
+				  
+				  <img class="card-img-top" id="background-image-url"  style="background-image: url(<%= element.image %>);" >
+
+				  <div class="card-body">
+				  	
+				  	<h5 class="card-title">
+				  		<%= element.name %>
+				  	</h5>
+
+				  	<p class="card-text">
+				  		<%= element.desc.substring(0, 100) %>...
+				  	</p>
+	    			
+	    			<a href="/lostpets/<%= element._id %>" class="btn btn-primary">Have you seen <%= element.name %>?</a>
+				  </div>
+				</div>
+			</div>
+
+		<% });%>
+
+	</div>
+</div>
+
+
+
+
+
+
+
+<% include ./partials/footer.ejs %>

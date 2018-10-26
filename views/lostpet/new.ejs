@@ -1,0 +1,44 @@
+<% include ../partials/header.ejs %>
+
+<div class="container">
+
+	<h1 class="text-center">Create new LostPetFinderAlert</h1>
+
+	<div class="form-width">
+		<form action="/lostpets" method="POST">
+
+			<div class="form-group">
+				
+				<label for="LostPetName">LostPet Name</label>
+				
+				<input type="text" name="name" class="form-control" id="LostPetName" aria-describedby="LostPetName" placeholder="Enter Name" required>
+				
+				<small id="emailHelp" class="form-text text-muted">Your information is confidential.</small>
+			</div>
+
+			<div class="form-group">
+
+				<label for="LostPetImage">LostPet Image</label>
+
+				<input type="text" name="image" class="form-control" id="LostPetImage" placeholder="Enter Image URL">
+			</div>
+
+			<div class="form-group">
+		    	
+		    	<label for="LostPetTextArea">LostPet Description</label>
+
+		    	<textarea name="desc" class="form-control" id="LostPetTextArea" rows="3" placeholder="Write a detailed description of your pet"></textarea>
+			</div>
+
+			<button type="submit" class="btn btn-primary btn-block">Submit</button>
+		</form>
+
+		<a href="/">Go back</a>
+
+	</div>	
+
+
+</div>
+
+
+<% include ../partials/footer.ejs %>

@@ -1,0 +1,55 @@
+
+
+
+<% include ../partials/header.ejs %>
+
+
+
+<div class="container">
+
+	<h1 class="text-center">Edit <%= lostPet.name %></h1>
+
+	<div class="col-md-6 offset-md-3">
+		<form action="/lostpets/<%= lostPet._id %>?_method=PUT" method="POST" class="delete-form">
+
+			<div class="form-group">
+				
+				<label for="LostPetName">LostPet Name</label>
+
+				<input type="text" name="lostPet[name]" class="form-control" id="LostPetName" aria-describedby="LostPetName" placeholder="Enter Name" value="<%= lostPet.name %>" required>
+
+				<small id="emailHelp" class="form-text text-muted">Your information is confidential.</small>
+			</div>
+
+			<div class="form-group">
+
+				<label for="LostPetImage">LostPet Image</label>
+				
+
+				<input type="text" name="lostPet[image]" class="form-control" value="<%= lostPet.image %>">
+			</div>
+
+			<div class="form-group">
+		    	
+		    	<label for="LostPetTextArea">LostPet Description</label>
+
+		    	<textarea name="lostPet[desc]" class="form-control" id="LostPetTextArea" rows="3" placeholder="Write a detailed description of your pet" value=""><%= lostPet.desc %></textarea>
+			</div>
+
+			<button type="submit" class="btn btn-primary">Submit</button>
+
+		</form>
+
+		<form action="/lostpets/<%= lostPet._id %>?_method=DELETE" method="POST" class="delete-form">
+			<button class="btn btn-danger">Delete</button>
+		</form>
+
+		<a href="/">Go Back</a>		
+	</div>
+
+	
+
+</div>
+
+
+<% include ../partials/footer.ejs %>
