@@ -1,0 +1,656 @@
+html, body {
+	height: 100%;
+	color: #333;
+	/*font-family: 'Roboto', sans-serif;*/
+	font-family: helvetica;
+}
+
+
+
+
+/*#header-caption {
+	font-family: 'PT Serif', serif;
+}*/
+
+header {
+
+
+	background: 
+
+	-webkit-linear-gradient(to left, rgba(255,255,255, 0.001), white 100%);
+	
+	background: 
+
+	-o-linear-gradient(right, transparent, white 100%);
+	
+	background: 
+
+	linear-gradient(to left, rgba(255,255,255, 0.1001), white 100%),
+	             
+	             url(../images/happy-family.jpg);
+
+	box-shadow: inset -46px 0px 63px 0px rgba(255,255,255,1);
+
+	background-repeat: no-repeat;
+
+	background-attachment: right;
+	
+	background-position: center;
+	background-size: cover;
+
+	height: 40em;
+	/*height: 80vh;*/
+	/*height: 90%*/
+
+	/*height: 100%;*/
+	width: 80%;
+	margin: 0 auto;
+
+	/*width: 100%;*/
+
+	/*color: white;*/
+	/*box-shadow: inset 450px 00px 500px 50px #FFF;*/
+}
+
+
+
+#signup {
+
+}
+
+#header-elements {
+	padding-top: 5rem;
+
+}
+
+#header-h1 h1 {
+	
+	font-weight: 800;
+    text-transform: uppercase;
+
+    /*text-shadow: 2px 4px 3px rgba(0,0,0,0.1);*/
+   	
+
+    font-size: 3rem;
+
+
+}
+
+#find-lost-pet-button {
+	background-color: #C8252C;
+	/*margin: 4rem;*/
+	/*margin: 0 auto;*/
+	margin-left: 15px;
+	box-shadow: 2px 4px 5px rgba(0,0,0,0.1);
+}
+
+.LPF-button:hover {
+	background-color: #dc3445;
+}
+
+#header-p {
+
+	font-size: 24px;
+
+    /*text-shadow: 2px 4px 3px rgba(0,0,0,0.1);*/
+	
+	margin-top: 2rem;
+    margin-bottom: 4rem;
+
+}
+
+#header-p p {
+	font-size: 1.6rem;
+}
+
+/*#header-caption {
+	padding-top: 4rem;
+}*/
+
+
+#header-caption h1{
+
+	/*margin-bottom: 50px;*/
+	
+	font-family: 'helvetica';
+	/*padding-top: 2em;*/
+
+
+    text-transform: uppercase;
+
+	font-weight: 800;
+
+/*	text-shadow: 
+						4px 4px 2px rgba(0,0,0,.4), 
+					8px 8px 13px rgba(0,0,0,.1),
+						18px 18px 23px rgba(0,0,0,.1);*/
+
+
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.1);
+
+	
+/*	display: inline-block;
+    width: 26em;
+	padding-top: 10em;*/
+
+/*	text-align: center;
+*/}
+
+#header-caption a {
+	    /*margin-top: 5em;*/
+	    /*margin-left: 3em;*/
+
+}
+
+#header-caption p {
+	font-size: 24px;
+	    
+
+	    /*padding-right: 6rem;
+
+
+	    padding-top: 2rem;
+*/
+}
+
+#section-two {
+	/*padding: 100px;*/
+	background:
+	 /*#d7df9a;*/
+	/*#e7ebc4;*/
+	/*#f4f5e3;*/
+	/*#edf5e3;*/
+	#e4f7d4;
+	padding: 1rem;
+}
+
+#section-two h6 {
+	margin: 0;
+	font-weight: bold;
+	color: #18681f;
+	font-size: 1.1rem
+}
+
+#section-two span a {
+	color: #18681f;
+	text-decoration: underline;
+}
+
+/*LOST ANF FOUND*/
+
+#lost-and-found {
+	padding-top: 1rem;
+	/*padding-bottom: 2rem;*/
+	background: #f8fafd;
+
+}
+
+#lost-and-found h2 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 600;
+	padding-bottom: 1rem;
+}
+
+
+#lost-and-found h3 {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 28px;
+	margin-top: 1rem;
+	text-transform: capitalize;
+		font-family: 'Roboto Slab', serif;
+	font-weight: 600;
+}
+
+#lost-and-found hr {
+	margin-top: 4rem;
+	margin-bottom: 0;
+
+}
+
+#lost-and-found p {
+	text-align: center;
+	margin: 0 2rem;
+}
+
+.lost-and-found-cards {
+	margin-top: 1rem;
+}
+
+.lost-and-found-cards div{
+	padding-top: 1rem;
+}
+
+.lost-and-found-images {
+	/*padding: 0 4rem;*/
+	height: 120px;
+	width: 120px;
+	display: block;
+	margin: 0 auto;
+}
+
+#lost-and-found-button {
+	padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: 3rem;
+    background-color: #C8252C;
+}
+
+
+
+
+
+#why-use {
+	/*background: #f8fafd; */
+	padding-bottom: 3rem;
+	padding-top: 3rem;
+}
+
+#why-use h2 {
+	margin-bottom: 3rem;
+	
+    font-family: 'Roboto Slab', serif;
+	font-weight: 600;
+}
+
+#why-use h5 {
+    font-family: 'Roboto Slab', serif;
+	font-weight: 600;
+}
+
+#why-use-padded-container {
+	padding-right: 7rem;
+    padding-left: 7rem;
+    padding: 0 4rem;
+}
+
+.why-use-icon {
+	width: 64px;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+#free-ebook {
+	background: linear-gradient(to right, rgba(255,255,255, 0.001), white 100%), 
+	             url(../images/kissing-dog.jpg);
+
+	box-shadow: inset 46px 0px 63px 0px rgba(255,255,255,1);
+
+
+	background-attachment: center;
+	height: 40rem;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 90%;
+	margin: 0 auto;
+	
+	/*flip over y axis*/
+	/*-webkit-transform: scaleX(-1);*/
+
+}
+
+#free-ebook h3 {
+    font-family: 'Roboto Slab', serif;
+	font-weight: 600;
+}
+
+#ebook-elements {
+	/*padding-top: 11rem;*/
+	/*font-family: 'PT Serif', serif;*/
+	font-weight: bold;
+	/*background: pink;*/
+	/*height: 40em;*/
+	/*border: 4px solid pink;*/
+	/*background: salmon;*/
+	margin-top: 9rem;
+	margin-right: 0.5rem;
+	background: rgba(255,255,255,0.5);
+	padding: 2rem 0;
+}
+
+#ebook-elements h3 {
+	font-weight: bold;
+
+}
+
+#ebook-elements p {
+	padding: 1rem 0;
+}
+
+
+#section-three {
+	padding-top: 3rem;
+
+	background: #f9f9f9;
+	/*background: #d0cfcf75;*/
+
+					/*this is the background color*/
+
+					/*background: #f8fafd;*/
+
+
+	padding-bottom: 2rem;
+
+	/*font-family: 'georgia', serif;*/
+
+
+
+}
+
+#section-three h2 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 600;
+
+
+}
+
+
+
+/*#about-us-section {
+	padding-bottom: 3rem;
+}
+
+
+
+#about-us-section h2{
+	font-family: 'PT Serif', serif;
+    font-weight: bold;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+#about-us-section h3 {
+	text-align: center;
+}
+
+
+
+.about-us-text {
+	font-weight: 700;
+	margin: 0 5rem;
+	color: #333;
+}
+
+.about-us-text p{
+	font-family: "georgia";
+	font-weight: 500;
+	font-size: 18px;
+}*/
+
+#about {
+	font-family: 'Roboto Slab', serif;
+	margin: 3rem 0;
+
+}
+
+#about h2 {
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+#about h3 {
+	font-weight: 600;
+
+		font-size: 24px;
+
+	line-height: 2rem;
+	margin-bottom: 1.25rem;
+	margin-bottom: 20px;
+	margin-top: 3rem;
+	cursor: pointer;
+
+}
+
+#about p,ul {
+	color: #444;
+	font-family: 'helvetica';
+	font-size: 18px;
+	font-weight:;
+}
+
+.about-hidden {
+	display: none;
+}
+
+
+#map {
+	background: url(../images/map-los-angeles.png);
+	background-repeat: no-repeat;
+	background-attachment: left;
+	background-position: center;
+	background-size: cover;
+	height: 40em;
+}
+
+#map span {
+    display: block;
+    height: 40em;
+    background: rgba(0,0,0,0.1);
+    opacity: 1;
+    transition: 0.6s;
+
+}
+
+#map span:hover {
+    display: block;
+    height: 40em;
+    background: none;
+    opacity: 0;
+    transition: 1.5s;
+
+
+}
+
+#map h2 {
+	text-align: center;
+	font-weight: bold;
+	font-family: 'PT Serif', serif;
+	padding-top: 5rem;
+}
+
+#map-button {
+	margin-top: -20rem;
+	text-transform: capitalize;	
+	/*padding:1rem;*/
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+}
+
+
+
+
+
+
+
+
+
+#people-love-LPF {
+	background-color: #f6f9fe;
+	padding-top: 4rem;
+	text-align:center;
+    padding-bottom: 4rem;
+
+	
+
+}
+
+#people-love-LPF h2 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: 600;
+
+/*	font-family: 'Roboto Slab', serif;
+		font-family: 'PT Serif', serif;
+*/
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.twitter-bird {
+	color: #1da1f2;
+	text-align: center;
+}
+
+.avatar {
+	/*padding-bottom: 1rem;*/
+}
+
+.message {
+	padding-top: 1rem;	
+}
+
+#people-love-LPF-button {
+	padding-top: 3rem;
+}
+
+
+
+
+footer {
+	padding: 2rem;
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+
+	/*width: 100%;*/
+	text-align: center;
+}
+
+footer h4 {
+		color:  #8f9296;
+		/*font-size: 1.5rem;*/
+		margin: 0;
+
+}
+
+#footer-links {
+	padding: 1rem;
+}
+
+#footer-elements p {
+	color: #8f9296;
+}
+
+#footer-elements a {
+	color: whitesmoke;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 1rem;
+}
+
+
+/*need to reclassify this*/
+.round-img-fluid {
+	padding: 1rem;
+}
+
+
+
+#nav-border {
+	border-bottom: solid 1px lightgray;
+}
+
+
+
+.tip-box {
+	/*padding: 1rem;*/
+}
+
+.tip-box p {
+	font-size: 18px;
+}
+
+#section-three-button {
+	background-color: #C8252C;
+	/*margin: 3rem;*/
+	/*padding: 0.5rem 10rem;*/
+	/*padding: .75rem 10rem;*/
+	box-shadow: 2px 4px 5px rgba(0,0,0,0.1);
+
+}
+
+
+
+
+
+/* in the hambuger makes the button full width*/
+
+/*max width means this and smaller*/
+@media (max-width: 768px) {
+	.buttonBlock {
+		/*width: 100%;*/
+		display: block;
+	}
+/*	#header-caption {
+		text-align: center;
+
+	}*/
+	/*#find-lost-pet-button {
+	background-color: #C8252C;
+			text-align: center;
+
+	
+	}*/
+
+	header {
+		width: 100%;
+		box-shadow: none;
+		/*text-align: center;*/
+	}
+
+	#header-p {
+		margin-top: 0;
+	}
+
+	#section-three h5{
+    	margin-top: 2rem;
+	}
+
+	.section-three-img {
+		padding: 3rem;
+	}
+
+	#map-button {
+	margin-top: -10rem;
+	text-transform: capitalize;	
+	/*padding:1rem;*/
+/*	padding-left: 2rem;
+	padding-right: 2rem;*/
+	display: block;
+	}
+
+	#free-ebook {
+
+
+		box-shadow: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	#map {
+		width: 100%;
+
+	}
+
+	#why-use-padded-container {
+		padding: 1rem;
+		text-align: center;
+	}
+	
+	#ebook-elements {
+		/*text-align: center;*/
+	}
+	
+	#ebook-elements-button {
+		display: block;
+	}
+
+	.about-us-text {
+		margin: 0;
+	
+}
+
+}
