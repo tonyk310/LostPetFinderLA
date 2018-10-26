@@ -11,7 +11,7 @@ middlewareObj.isLoggedIn = function(req, res, next){
 		return next();
 	}
 
-	req.flash('danger', "YOU MUST BE LOGGED IN TO DO THAT!!!");
+	req.flash('danger', "You must be logged in to do that!!!");
 
 	console.log("YOU MUST BE LOGGED IN TO DO THAT!!!");
 	res.redirect('/login');	
@@ -32,7 +32,7 @@ middlewareObj.checkLostPetOwnership = function(req, res, next){
 					next();
 				} else {
 
-					req.flash('danger', "YOU DO NOT HAVE PERMISSION TO DO THAT!!!");
+					req.flash('danger', "You do not have permission to do that!!!");
 
 					console.log("YOU DO NOT HAVE PERMISSION TO DO THAT!!!");
 					res.redirect('back');
@@ -40,7 +40,7 @@ middlewareObj.checkLostPetOwnership = function(req, res, next){
 			}
 		});
 	} else {
-		req.flash('danger', "YOU MUST BE LOGGED IN TO DO THAT!!!");
+		req.flash('danger', "You must be logged in to do that!!!");
 
 		console.log('YOU MUST BE LOGGED IN TO DO THAT');
 		res.redirect('/login');
@@ -60,7 +60,7 @@ middlewareObj.checkCommentOwnership = function(req, res, next){
 				if(foundComment.author.id.equals(req.user.id)){
 					next();
 				} else {
-					req.flash('danger', "YOU DO NOT HAVE PERMISSION TO DO THAT!!!");
+					req.flash('danger', "You do not have permission to do that!!!");
 					console.log("YOU DO NOT HAVE PERSMISSION TO DO THAT!!!");
 					res.redirect('back');
 				}
@@ -68,7 +68,7 @@ middlewareObj.checkCommentOwnership = function(req, res, next){
 		});
 	} else {
 
-		req.flash('danger', "YOU MUST BE LOGGED IN TO DO THAT!!!");
+		req.flash('danger', "You must be logged in to do that!!!");
 
 		console.log("YOU MUST BE LOGGED IN TO DO THAT!!!");
 		res.redirect('/login');
