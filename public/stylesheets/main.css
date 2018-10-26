@@ -6,8 +6,6 @@ html, body {
 }
 
 
-
-
 /*#header-caption {
 	font-family: 'PT Serif', serif;
 }*/
@@ -241,7 +239,7 @@ header {
 
 
 #why-use {
-	/*background: #f8fafd; */
+	background: #f8fafd; 
 	padding-bottom: 3rem;
 	padding-top: 3rem;
 }
@@ -572,9 +570,28 @@ footer h4 {
 
 }
 
+#lost-pet-alert {
+	margin-bottom: 2rem;
+}
 
+#lost-pet-alert h2 {
+	font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+    margin: 1rem;
+}
 
+.lost-pet-alert-button {
+	/*width: 25rem;*/
+	/*margin: 0.5rem;*/
+	/*margin-top: 1rem;*/
+	padding-left: 4rem;
+	padding-right: 4rem;
+	margin-top: 1rem;
+}
 
+.delete-form {
+	display: inline;
+}
 
 /* in the hambuger makes the button full width*/
 
@@ -610,7 +627,7 @@ footer h4 {
 	}
 
 	.section-three-img {
-		padding: 3rem;
+		/*padding: 3rem;*/
 	}
 
 	#map-button {
