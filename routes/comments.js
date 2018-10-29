@@ -95,6 +95,7 @@ router.put('/lostpets/:id/comments/:comment_id', middlewareObj.checkCommentOwner
 			console.log(err);
 		} else {
 			// console.log("COMMENT UPDATE ROUTE:", updatedComment);
+			req.flash('success', "Comment succsessfully updated!");
 			res.redirect('/lostpets/' + req.params.id);
 		}
 	});

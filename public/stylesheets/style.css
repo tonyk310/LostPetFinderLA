@@ -30,3 +30,7 @@ body {
 .delete-form {
 	display: inline;
 }
+
+#flash {
+	margin-top: 1rem;
+}
