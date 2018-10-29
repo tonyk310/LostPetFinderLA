@@ -1,28 +1,19 @@
 <% include ../partials/header.ejs %>
 
-
-
-
-
-
 <div class="container">
 
-	<h1 class="text-center">All Lost Pupperonis</h1>
-	<a href="/" class="btn btn-lg btn-primary">Home</a>
-
-
 	<div class="row">
+
 		<div class="col-12">
-			<h2>Recent LostPetFinderLA Alerts</h2>
-			<a href="/new" class="btn btn-primary btn-lg">Add Lost Pet</a>
-			
+
+			<h1 class="text-center h1">Recent LostPetFinderLA Alerts</h1>		
 		</div>
 
 		<%lostPet.forEach(function(element){ %>
 
 			<div class="col-md-4">
 				
-				<div class="card">
+				<div class="card mb-4">
 				  
 				  <img class="card-img-top" id="background-image-url"  style="background-image: url(<%= element.image %>);" >
 
@@ -46,9 +37,18 @@
 
 		<% });%>
 
+
+		<div class="col-12 text-center">
+			<a href="/new" class="btn btn-primary btn-lg">Add Lost Pet</a>		
+
+		</div>
 	</div>
 
 
+
 </div>
+
+
+
 
 <% include ../partials/footer.ejs %>
