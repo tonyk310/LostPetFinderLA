@@ -71,7 +71,7 @@ router.post('/login',
 		failureRedirect: '/login',
 
 		successFlash: "Log in successful",
-		failureFlash: "true"
+		failureFlash: true
 	})
 );
 
