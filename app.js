@@ -104,5 +104,5 @@ app.use(indexRoutes);
 
 
 app.listen(process.env.PORT || 3000, process.env.IP, function(){
-	console.log("Deployed Demo Started");
+	console.log("LostPetFinderLA Server Started");
 });
