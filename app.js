@@ -26,7 +26,10 @@ var app 					= express();
 // Mongoose CONFIG
 
 // this connects app.js to mongoDB
-mongoose.connect("mongodb://localhost:27017/deploy2", { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost:27017/deploy2", { useNewUrlParser: true });
+mongoose.connect("mongodb://lostpetfinderla:password1@ds255347.mlab.com:55347/lostpetfinderla", { useNewUrlParser: true });
+
+
 // this changes the depreication
 mongoose.set("useFindAndModify", false);
 
