@@ -25,11 +25,12 @@ var app 					= express();
 
 // Mongoose CONFIG
 
-console.log(process.env.MLAB_DATABASE_URL);
+// console.log(process.env.MLAB_DATABASE_URL);
 
 // this connects app.js to mongoDB
 
 // mongoose.connect("mongodb://localhost:27017/deploy2", { useNewUrlParser: true });
+// mongoose.connect("mongodb://lostpetfinderla:password1@ds255347.mlab.com:55347/lostpetfinderla", { useNewUrlParser: true });
 mongoose.connect(process.env.MLAB_DATABASE_URL || "mongodb://localhost:27017/deploy2", { useNewUrlParser: true });
 
 
@@ -104,8 +105,9 @@ app.use(indexRoutes);
 
 
 
+var port = process.env.PORT || 3000;
 
-
-app.listen(process.env.PORT || 3000, process.env.IP, function(){
-	console.log("LostPetFinderLA Server Started on DB: " + process.env.MLAB_DATABASE_URL);
+app.listen(port, process.env.IP, function(){
+	// console.log("LostPetFinderLA Server Started on DB: " + process.env.MLAB_DATABASE_URL);
+	console.log("Server Started on port: " + port);
 });
